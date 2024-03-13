@@ -3,37 +3,77 @@
     font-family: Inter;
     font-size: 32px;
     font-weight: 400;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
+    line-height: 150%;
     
 
 }
 .logoAlura{
-    width: Fixed (120px);
-    height: Fixed (48px);
-    top: 40px;
-    left: 40px;
-    gap: 40px;
+   padding-top: 10px;
+   margin-left: 10px;
+   width: 10%;
  
 }
 main{
     display: flex;
     margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 80px;
+}
+
+.textArea{
+   border: none; 
+   color: #0A3871;
+   margin-top: 90px;
+   text-transform: lowercase;
+}
+
+::placeholder{
+    color: #0A3871;
+}.textArea:focus{
+    outline: none;
+}
+
+.buttons{
+    display: flex;
 }
 
 .btnEnc{
     background: #0A3871;
-    padding: 24px;
+    color: #D8DFE8;
     border-radius: 24px;
-    gap: 8px;
+    height: 67px;
+    width: 336px;
 }
 
 .btnDes{
     background: #D8DFE8;
-    padding: 24px;
     border-radius: 24px;
-    gap: 8px;
+    height: 67px;
+    width: 336px;
+
+}
+
+.textResult{
+    background: white;
+    background-image: url("img/Muñeco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+
+.btnCopiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-top: 402px;
+    margin-left: 105;
+    position: absolute;
+    width: 336px;
 
 }
