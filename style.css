@@ -34,21 +34,24 @@ main{
 
 .buttons{
     display: flex;
+    padding: auto;
 }
 
 .btnEnc{
     background: #0A3871;
     color: #D8DFE8;
     border-radius: 24px;
-    height: 67px;
-    width: 336px;
+    height: 60px;
+    width: 300px;
+    margin: 0 5px 0;
 }
 
 .btnDes{
     background: #D8DFE8;
     border-radius: 24px;
-    height: 67px;
-    width: 336px;
+    height: 60px;
+    width: 300px;
+    margin: 0 5px 0
 
 }
 
@@ -62,7 +65,7 @@ main{
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
-    position: fixed;
+    position: absolute;
 }
 
 .btnCopiar{
