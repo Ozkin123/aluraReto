@@ -39,3 +39,8 @@ function btnDeseencriptar(){
     encMessage.value="";
 }
 
+function copyBtn(){
+  let textCopied = document.querySelector(".textResult")
+  textCopied.select();
+  document.execCommand('copy');
+}
