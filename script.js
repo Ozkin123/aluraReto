@@ -17,5 +17,25 @@ let arrayEnc =[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
 function btnEncriptar(){
     const encResult = encriptar(encMessage.value);
     messageResult.value=encResult;
+    encMessage.value="";
+    messageResult.style.backgroundImage ="none";
+}
+
+function Desencriptar(messageToDes){
+    messageToDes = messageToDes.toLowerCase();
+    let arrayEnc =[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+    
+       for(let i =0;i<arrayEnc.length;i++){
+         if(messageToDes.includes(arrayEnc[i][1])){
+            messageToDes=messageToDes.replaceAll(arrayEnc[i][1],arrayEnc[i][0]);
+          }
+      }
+      return messageToDes;
+}
+
+function btnDeseencriptar(){
+    const encResult = Desencriptar(encMessage.value);
+    messageResult.value=encResult;
+    encMessage.value="";
 }
 
